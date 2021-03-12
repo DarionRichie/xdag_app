@@ -14,7 +14,14 @@ const path = require('path');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('error',{message:"不允许访问",error:{
+    status:"404",
+    stack:'error'
+  }});
+});
+
+router.get('/huang',function(req,res,next){
+  res.render('huang');
 });
 router.get('/files', function(req, res, next) {
   // 显示服务器文件 

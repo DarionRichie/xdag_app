@@ -1,0 +1,408 @@
+
+/*  Fonts  */
+@font-face {
+    font-family: 'raleway-regular';
+    src: url('../fonts/raleway-regular.eot');
+    src: url('../fonts/raleway-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-regular.woff') format('woff'),
+         url('../fonts/raleway-regular.ttf') format('truetype'),
+         url('../fonts/raleway-regular.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'raleway-bold';
+    src: url('../fonts/raleway-bold.eot');
+    src: url('../fonts/raleway-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-bold.woff') format('woff'),
+         url('../fonts/raleway-bold.ttf') format('truetype'),
+         url('../fonts/raleway-bold.svg#ralewaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+/*  General CSS*/
+
+h1, h2, h3, h4, h5 ,h6{
+    color: #6d6d6d;
+    font-family: "raleway-regular", arial;
+    letter-spacing: 1px;
+}
+
+h1              { font-size: 2em;}
+h2              { font-size: 1.5em;}
+h3              { font-size: 1.17em;}
+h5              { font-size: .83em;}
+h6              { font-size: .75em;}
+h1, h2, h3, h4,
+h5, h6          { font-weight: bolder }
+
+.clearfix:before,  
+.clearfix:after {  
+    content: " ";  
+    display: table;  
+}  
+.clearfix:after {  
+    clear: both;  
+}  
+ 
+.clearfix {  
+    *zoom: 1;  
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+
+.billboard{
+    width: 100%;
+    height: 1400px;
+    background: url('../img/bg1.jpg') no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: relative;
+}
+
+.billboard .iphone{
+    display: block;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    float: left;
+    margin-top: 0px;
+    background: url('../img/bg1.jpg') no-repeat;
+}
+
+
+.billboard .iphone .slider_wrapper{
+    display: block;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #c3c3c3;
+    overflow: hidden;
+
+}
+
+.billboard .iphone .slider_wrapper .slides{
+    display: block;
+    float: left;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+
+.billboard .iphone .slider_wrapper .rslides_tabs{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: 20px;
+    z-index: 9999;
+}
+
+
+.billboard .iphone .slider_wrapper .rslides_tabs li{
+    list-style: none;
+    display: inline;
+}
+
+.billboard .iphone .slider_wrapper .rslides_tabs li a{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 15px;
+    background: rgba(255, 255, 255, .5);
+    text-indent: -999px;
+    overflow: hidden;
+
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
+}
+
+.billboard .iphone .slider_wrapper  .rslides_tabs .rslides_here a{
+    background: rgba(255, 255, 255, 1);
+}
+
+
+
+.billboard .details{
+    display: block;
+    width: 100%;
+    height: 1000px;
+    float: right;
+    margin-top: 0px;
+    position: relative;
+    text-align:center;
+}
+
+.billboard .or{
+    display: inline-block;
+    color: #757373;
+    font-family: "raleway-regular", arial;
+    font-size: 14px;
+    margin:0 50px;
+    vertical-align: 30px;
+}
+
+.billboard .download_btn .ios_btn,
+.billboard .download_btn .android_btn{
+    display: inline-block;
+    width: 244px;
+    height: 60px;
+
+}   
+
+
+.billboard .details h1{
+    color: #595959;
+    font-family: "raleway-regular", arial;
+    font-size: 50px;
+    margin-bottom: 100px;
+    line-height: 60px;
+    margin-left: 60px;
+    margin-top: 220px;
+    text-transform: uppercase;
+}
+
+
+
+.billboard .details p{
+    color: #747272;
+    font-family: "raleway-regular", airl;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 400px;
+    margin-bottom: 200px;
+    margin-left: 100px;
+}
+
+.billboard .details p{
+    color: #747272;
+    font-family: "raleway-regular", airl;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+}
+
+.billboard .details b{
+    color: #747272;
+    font-family: "raleway-regular", airl;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 500px;
+    margin-bottom: 200px;
+    margin-left: 100px;
+}
+
+
+
+.billboard .download_btn .ios_btn,
+.billboard .download_btn .android_btn{
+    display: inline-block;
+    width: 244px;
+    height: 60px;
+    
+}   
+
+
+.billboard .subscription,
+.billboard #counter{
+    display: block;
+    float: left;
+    margin-right: 40px;
+}
+
+
+.billboard .subscription form input[type=text]{
+    display: block;
+    float: left;
+    width: 160px;
+    padding: 20px;
+    border: 1px solid #bfbfbf;
+    background-color: #fff;
+    color: #757373;
+    font-family: "raleway-regular", arial;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 0;
+    outline: none;
+
+    -webkit-border-top-left-radius: 2px;
+    -moz-border-top-left-radius: 2px;
+    -o-border-top-left-radius: 2px;
+    border-top-left-radius: 2px;
+
+    -webkit-border-bottom-left-radius: 2px;
+    -moz-border-bottom-left-radius: 2px;
+    -o-border-bottom-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.billboard form input[type=text]::-webkit-input-placeholder{
+   color: #c5c4c4;
+    font-family: "raleway-regular", arial;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.billboard form input[type=text]::-moz-placeholder{
+   color: #c5c4c4;
+    font-family: "raleway-regular", arial;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.billboard form input[type=text]::-moz-placeholder{
+   color: #c5c4c4;
+    font-family: "raleway-regular", arial;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.billboard form input[type=text]::-ms-input-placeholder{  
+   color: #c5c4c4;
+    font-family: "raleway-regular", arial;
+    font-size: 14px;
+    letter-spacing: 1px;
+} 
+
+.billboard .subscription form  #submit_btn{
+    display: block;
+    float: left;
+    width: 62px;
+    height: 58px;
+    margin-left: -1px;
+    border: 1px solid #bfbfbf;
+    outline: none;
+
+    -webkit-border-top-right-radius: 2px;
+    -moz-border-top-right-radius: 2px;
+    -o-border-top-right-radius: 2px;
+    border-top-right-radius: 2px;
+
+    -webkit-border-bottom-right-radius: 2px;
+    -moz-border-bottom-right-radius: 2px;
+    -o-border-bottom-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+
+    background-image: -webkit-linear-gradient(bottom, #ddd 0%, #f3f3f3 100%);
+    background-image: -moz-linear-gradient(bottom, #ddd 0%, #f3f3f3 100%);
+    background-image: -o-linear-gradient(bottom, #ddd 0%, #f3f3f3 100%);
+    background-image: linear-gradient(bottom, #ddd 0%, #f3f3f3 100%);
+    background-color: #e3e3e3;
+}
+
+.billboard .subscription form  #submit_btn:hover{
+    cursor: pointer;
+}
+
+.billboard .subscription form .icon{
+    display: block;
+    width: 14px;
+    height: 12px;
+    background: url("../img/send_icon.png") no-repeat;
+    margin-left: 16px;
+}
+
+
+.billboard #counter{
+    display: block;
+    height: 60px;
+    background: rgba(255, 255, 255, .5); 
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.billboard #counter .countdown-row{
+    display: block;
+    margin: 12px 20px 0 20px;
+}
+
+.billboard #counter .countdown-section{
+    display: block;
+    float: left;
+    text-align: center;
+    border-right: 1px #C3C3C3 solid;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.billboard #counter .countdown-section:last-child{
+    padding-right: 0;
+    border-right: 0;
+}
+
+.billboard #counter .countdown-section:first-child{
+    padding-left: 0;
+}
+
+.billboard #counter .countdown-amount{
+    display: block;
+    color: #757373;
+    font-family: Arial;
+    font-size: 24px;
+}
+
+.billboard #counter .countdown-period{
+    display: block;
+    color: #999;
+    font-family: "raleway-regular", arial;
+    font-size: 12px;
+}
+
+
+
+
+footer{
+    width: 100%;
+    padding: 50px 0;
+    background: #fff;
+}
+
+footer .copyrights{
+    text-align: center;
+
+    font-size: 13px;
+    font-family: 'raleway-regular', arial;
+    color: #a6a6a6;
+    letter-spacing: .5px;
+}
+
+footer .copyrights a{
+    text-decoration: none;
+    color: #a6a6a6;
+}
+
+footer .sm{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.bold{
+    font-family: 'raleway-bold', arial;
+    font-weight: bold;
+}
